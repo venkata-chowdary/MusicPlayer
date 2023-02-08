@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div>
+        <button class="theme-btn theme-mode">
+            <i id="theme" class="fa-solid fa-sun"></i>
+        </button>
+    </div>
+    <div class="wrapper">
+        <header class="hero-menu">
+            <div class="buttonsHeader">
+                <button class="hdr-btn repeat-btn">
+                    <i id="repeat" class="fa-solid fa-repeat"></i>
+                </button>
+                <h3>Music Player</h3>
+                <button class="hdr-btn mute-btn">
+                    <i id="mute" class="fa-solid volume-btn fa-volume-high"></i>        
+                </button>
+            </div>
+
+            <div class="menu">
+                <h3>Menu</h3>
+                <div class="songsMenu" id="songMenu">
+            
+                </div>
+            </div>
+            
+            
+        </header>
+        <div class="player">
+            <div class="img">
+                <img id="img-id" class="image img-rotate" src="img/movie-1.jpg">
+            </div>
+
+            <div class="song-details">
+                <h2 class="name">Movie1</h2>
+                <h4 class="artist">Artist1</h4>
+            </div>
+
+            <div class="audio">
+                <div class="song-duration">
+                    <span class="current-time">0:00</span>
+                    <span class="max-time">0:00</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar">
+                        <audio src="music/movie-2.mp3" id="main-song"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btnC" id="prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button class="btnC play-pause">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="btnC" id="next">
+                    <i class="fa-solid fa-forward-step"></i>            
+                </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 class="clicked">OFF</h3>
+    </div>
+    <script src="music.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
